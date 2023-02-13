@@ -161,3 +161,16 @@ const inventory = [
     sold: 8,
   },
 ];
+
+/// Opdracht 1a ///
+const tvSort = inventory.filter ((tvType) => {
+  return tvType.brand;
+});
+console.log(tvSort);
+
+/// Opdracht 1b ///
+const soldOut = inventory.filter ((tvSoldout) => {
+  return tvSoldout.originalStock === tvSoldout.sold;
+});
+
+/// Opdracht 1c ///
