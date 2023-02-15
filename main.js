@@ -162,39 +162,11 @@ const inventory = [
   },
 ];
 
-/// Opdracht 1a ///
-const tvSort = inventory.filter ((tvType) => {
-  return tvType.brand;
+
+// Opdracht 3a //
+const tvList = document.getElementById("tv-list");
+
+const listItem = inventory.map((tvItem) => {
+  return <li>${tvItem.brand}</li>
 });
-console.log(tvSort);
-
-/// Opdracht 1b ///
-const soldOut = inventory.filter ((tvSoldout) => {
-  return tvSoldout.originalStock === tvSoldout.sold;
-});
-console.log(soldOut);
-
-/// Opdracht 1c ///
-const tvAmbilight = inventory.filter ((tvAmbilight) => {
-  return tvAmbilight.options.ambiLight;
-});
-console.log(tvAmbilight);
-
-// Opdracht 1d ///
-/*function sortPrice(Array) {
-  inventory.sort((a, b) =>
-  {
-    if (a.price > b.price)
-  return 1
-    else if (a.price < b.price) {
-  return -1
-} else {
-  return 0
-});
-  }
-console.log(inventory);*/
-
-inventory.sort((a, b) => (a.price > b.price ? 1 : -1));
-console.log(inventory);
-
-// Opdracht 2a //
+tvList.innerHTML = $(listItem.join)(" ");
