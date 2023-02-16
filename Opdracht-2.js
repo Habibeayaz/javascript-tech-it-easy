@@ -16,11 +16,12 @@ console.log(counterTvSold);
 // Opdracht 2b //
 /*Zorg ervoor dat dit aantal in het groen wordt weergegeven op de pagina.*/
 
-const totalTvSold = document.getElementById("total-tv-sold");
+const totalTvSold = document.getElementById("opdracht-2_b");
 
 console.log(totalTvSold);
 
 totalTvSold.textContent = counterTvSold;
+
 
 // Opdracht 2c //
 /*
